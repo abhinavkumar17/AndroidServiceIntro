@@ -38,4 +38,11 @@ class MainActivity : AppCompatActivity() {
         ContextCompat.startForegroundService(this, serviceIntent)
     }
 
+    fun enqueueWork(view: View) {
+        val input = editTextInput.text.toString()
+        val serviceIntent = Intent(this, JobIntentServiceDemo::class.java)
+        serviceIntent.putExtra("inputExtra", input)
+        JobIntentServiceDemo.enqueueWork(this, serviceIntent)
+    }
+
 }

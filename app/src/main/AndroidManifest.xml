@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="BIND_JOB_SERVICE"/>
 
     <application
         android:name=".App"
@@ -22,6 +23,7 @@
         </activity>
         <service android:name=".ForegroundService" />
         <service android:name=".IntentServiceDemo" />
+        <service android:name=".JobIntentServiceDemo" />
     </application>
 
 </manifest>
