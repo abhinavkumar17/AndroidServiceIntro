@@ -38,4 +38,10 @@
         android:layout_height="wrap_content"
         android:onClick="enqueueWork"
         android:text="Enqueue Work(JonIntentService)" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bindService"
+        android:text="Bind Service" />
 </LinearLayout>

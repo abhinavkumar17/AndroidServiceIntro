@@ -45,4 +45,8 @@ class MainActivity : AppCompatActivity() {
         JobIntentServiceDemo.enqueueWork(this, serviceIntent)
     }
 
+    fun bindService(view: View) {
+
+    }
+
 }
